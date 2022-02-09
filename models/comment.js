@@ -12,7 +12,7 @@ Comment.init(
             autoIncrement: true,
           },
 
-          name: {
+          title: {
             type: DataTypes.STRING,
             allowNull: false,
             },
