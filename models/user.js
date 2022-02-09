@@ -43,7 +43,7 @@ class User extends Model {
         },
         beforeUpdate: async (updatedUserData) => {
           updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-          return updatedWriterData;
+          return updatedUserData;
         },
       },
       sequelize,
